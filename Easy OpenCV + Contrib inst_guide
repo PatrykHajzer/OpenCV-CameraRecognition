@@ -1,0 +1,28 @@
+Przed instalacją pobierz aktualizacje i niezbędne bibloiteki
+  $ sudo apt-get update
+  $ sudo apt-get upgrade
+  $ sudo apt-get install build-essential cmake pkg-config
+  $ sudo apt-get install libjpeg8-dev libtiff5-dev libjasper-dev libpng12-dev
+  $ sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
+  $ sudo apt-get install libxvidcore-dev libx264-dev
+
+1)Utwórz katalog np. opencv
+2)w /opencv utwórz 2 katalogi: build i source
+3)do katalogu pobierz zawartość repozytorium opencv-master i opencv_contrib-master
+https://github.com/opencv/opencv
+https://github.com/opencv/opencv_contrib
+4)zainstaluj i uruchom cmake gui
+5) w "Where is the source code:" wpisz adres pobranego opencv-master :/opencv/source/opencv-master
+6) w "Here to build the binaries:" wpisz adres utworzonego katalogu build :/opencv/build
+7) zaznacz checkbox Advanced
+8) kliknij Configure
+9) w wyświetlonej tabeli poszukaj "OPENCV_EXTRA_MODULES_PATH " i w klej do niej ścieżkę do modułów z pobranego openecv_contrib-master
+ściezka powinna wyglądać mniej więcej :~/opencv/source/opencv_contrib-master/modules
+10) Zatwierdź działanie przyciskiem generate
+11) Jesli procez przejdzie pomyślnie zamknij cmake i wejdz przez terminal do adresu katalogu build
+12) w termianlu wpisz polecenie make -j"liczba twoich rdzeni procesora" (np. -j8)
+13)Proces moze potrwać kilkadziesiąt minut.
+14) Jeśli proces zakonczy się sukcesem aby sprawdzić czy biblioteka została poprawnie zainstalowana otwórz terminal
+i wpisz : python
+        >>>import cv2
+15)Jeśli nie pokażą się błędy oznacza że zainstalowałeś poprawnie bibliotekę, miłej zabawy
