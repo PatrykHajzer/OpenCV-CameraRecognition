@@ -1,0 +1,11 @@
+1) Do katalogu w którym są wszystkie pobrane pliki utwórz katalog dataSet
+    będzie on potrzebny do składowania zdjęć próbek
+2) Następnie uruchom dataSetCreator.py i wpisz id 1 lub 2
+4) Powinna uruchomić się kamerka, pokaż się w polu widzenia i poruszaj głową(program wyłapie 20 ustawień Twojej głowy)
+5) Wejdz do katalogu dataSet i upewnij się że są w nim nowe zdjęcia
+5) Następnie uruchom program trainner.py
+6) Następnie uruchom reqognizer.py
+7) Jeśli Twoja twarz nie jest rozpoznawana musisz poekperymentować z zmienną if(conf<=40), oraz jeśli chcesz możesz zmienić 
+if(Id==1):
+    Id="1" Na swoje imię.
+    Aby wyjść z programu naciśnij 'q'.
