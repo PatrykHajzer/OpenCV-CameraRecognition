@@ -1,5 +1,5 @@
-1) Do katalogu w którym są wszystkie pobrane pliki utwórz katalog dataSet
-    będzie on potrzebny do składowania zdjęć próbek
+1) Do katalogu w którym są wszystkie pobrane pliki utwórz katalog dataSet( będzie on potrzebny do składowania zdjęć próbek) 
+i trainner (w nim będzie plik .yml po uruchmieniu trainner.py )
 2) Następnie uruchom dataSetCreator.py i wpisz id 1 lub 2
 4) Powinna uruchomić się kamerka, pokaż się w polu widzenia i poruszaj głową(program wyłapie 20 ustawień Twojej głowy)
 5) Wejdz do katalogu dataSet i upewnij się że są w nim nowe zdjęcia
