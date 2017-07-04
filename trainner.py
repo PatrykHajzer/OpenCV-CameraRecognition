@@ -13,7 +13,6 @@ def getImagesAndLabels(path):
     faceSamples=[]
     Ids=[]
     for imagePath in imagePaths:
-        #tu jest magia kotrej nie rozumiem
         pilImage=Image.open(imagePath).convert('L')
         imageNp=np.array(pilImage,'uint8')
         Id=int(os.path.split(imagePath)[-1].split(".")[1])
