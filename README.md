@@ -1,4 +1,4 @@
-# OpenCV-CameraRecognition
+# OpenCV-FaceRecognition
 Camera Recognition with OpenCV Python
 
 Hi, here im trying to complete Face recognition app with using Opencv library.
